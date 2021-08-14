@@ -7,8 +7,21 @@ const Button = styled.a`
   font-size: 1.6rem;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
   border-radius: var(--mainRadius);
   transition: var(--mainTransition);
+
+  ${({ primary }) =>
+    primary &&
+    css`
+      background-color: var(--primary-200);
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background-color: var(--primary-100);
+      }
+    `}
 
   ${({ secondary }) =>
     secondary &&
