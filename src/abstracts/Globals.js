@@ -7,12 +7,12 @@ const Globals = createGlobalStyle`
     --white: hsl(0, 0%, 100%);
     --primary-100: hsl(22, 100%, 69%);
     --primary-200: hsl(22, 89%, 52%);
-    --secondary-100: hsl(0, 0%, 59%);
+    --secondary-100: hsl(198, 28%, 93%);
     --secondary-200: hsl(221, 23%, 58%); 
     --secondary-300: hsl(220, 50%, 17%);
 
     /* radius */
-    --mainRadius: 5rem;
+    --mainRadius: 1rem;
 
     /* shadows */
     --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .2);
