@@ -63,17 +63,23 @@ const Hero = () => {
     <Header>
       <Container>
         <div className="hero-info">
-          <HeroHeading>Typemaster keyboard</HeroHeading>
-          <Lead>
+          <HeroHeading data-aos="fade-up">Typemaster keyboard</HeroHeading>
+          <Lead data-aos="fade-up" data-aos-delay="100">
             Improve your productivity and gaming without breaking the bank.
             Upgrade to a high quality mechanical typing experience.
           </Lead>
-          <div className="hero-cta">
+          <div className="hero-cta" data-aos="fade-up" data-aos-delay="200">
             <Button primary>Pre-order Now</Button>
             <p className="hero-date">Release on 5/27</p>
           </div>
         </div>
-        <img className="hero-img" src={HeroImg} alt="typemaster keyboard" />
+        <img
+          className="hero-img"
+          src={HeroImg}
+          alt="typemaster keyboard"
+          data-aos="fade-in"
+          data-aos-delay="300"
+        />
         <img className="hero-bg-pattern" src={bgPattern} alt="" />
       </Container>
     </Header>

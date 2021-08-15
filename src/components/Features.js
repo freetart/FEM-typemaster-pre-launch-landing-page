@@ -29,7 +29,7 @@ const Container = styled.div`
 const Features = () => {
   return (
     <section>
-      <Container>
+      <Container data-aos="fade-in" data-aos-delay="200">
         {cardData.map((card) => (
           <Feature
             key={card.id}

@@ -66,11 +66,17 @@ const Product = () => {
     <section>
       <Container>
         <img className="hero-bg-pattern" src={bgPattern} alt="" />
-        <div className="product-img product-img--one"></div>
-        <div className="product-img product-img--two"></div>
+        <div className="product-img product-img--one" data-aos="fade-in"></div>
+        <div
+          className="product-img product-img--two"
+          data-aos="fade-in"
+          data-aos-delay="200"
+        ></div>
         <div className="product-info">
-          <SubHeading>Mechanical wireless keyboard</SubHeading>
-          <Paragraph>
+          <SubHeading data-aos="fade-up">
+            Mechanical wireless keyboard
+          </SubHeading>
+          <Paragraph data-aos="fade-up" data-aos-delay="300">
             The Typemaster keyboard boasts top-notch build and practical design.
             It offers a wide variety of switches and keycaps, along with
             reliable wireless connectivity.
