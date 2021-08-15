@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { textStyles } from "../../abstracts/Mixins";
+import {
+  textStyles,
+  sectionSpacingSm,
+  headingStyles,
+} from "../../abstracts/Mixins";
 
 export const Lead = styled.p`
   ${textStyles}
@@ -10,4 +14,13 @@ export const Lead = styled.p`
 
 export const Paragraph = styled(Lead)`
   font-size: 1.6rem;
+`;
+
+export const Copyright = styled(Lead)`
+  ${sectionSpacingSm}
+  text-align: center;
+
+  span {
+    ${headingStyles}
+  }
 `;
