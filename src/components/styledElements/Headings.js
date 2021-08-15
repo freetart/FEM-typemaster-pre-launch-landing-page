@@ -7,3 +7,10 @@ export const HeroHeading = styled.h1`
   color: var(--secondary-300);
   text-transform: uppercase;
 `;
+
+export const SubHeading = styled.h2`
+  ${headingStyles}
+  font-size: 3.2rem;
+  color: var(--secondary-300);
+  text-transform: uppercase;
+`;

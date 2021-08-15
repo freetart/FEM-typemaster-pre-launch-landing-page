@@ -5,7 +5,6 @@ import Button from "./styledElements/Buttons";
 import HeroImg from "../images/desktop/image-keyboard.jpg";
 import bgPattern from "../images/shared/pattern-square.svg";
 import { headingStyles } from "../abstracts/Mixins";
-
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
 
 const Header = styled.header`

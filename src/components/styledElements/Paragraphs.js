@@ -7,3 +7,7 @@ export const Lead = styled.p`
   color: var(--secondary-200);
   padding: 2rem 0;
 `;
+
+export const Paragraph = styled(Lead)`
+  font-size: 1.6rem;
+`;
