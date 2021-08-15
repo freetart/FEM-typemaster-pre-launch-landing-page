@@ -6,6 +6,7 @@ import HeroImg from "../images/desktop/image-keyboard.jpg";
 import bgPattern from "../images/shared/pattern-square.svg";
 import { headingStyles } from "../abstracts/Mixins";
 import { maxWidthLg, sectionSpacingSm } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Header = styled.header`
   overflow: hidden;
@@ -20,10 +21,22 @@ const Container = styled.div`
   gap: 5rem;
   position: relative;
 
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+  `}
+
+  ${Responsive.sm`
+    text-align: center;
+  `}
+
   .hero-cta {
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    ${Responsive.sm`
+      flex-direction: column;
+    `}
   }
 
   .hero-date {

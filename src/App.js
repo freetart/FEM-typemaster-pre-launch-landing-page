@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
 import Features from "./components/Features";
+import { Copyright } from "./components/styledElements/Paragraphs";
+import Tag from "./components/Tag";
 
 const App = () => {
   return (
@@ -14,6 +16,10 @@ const App = () => {
         <Product />
         <Features />
       </main>
+      <Copyright>
+        <span>Typemaster 2021 </span>| All Rights Reserved
+      </Copyright>
+      <Tag />
     </>
   );
 };

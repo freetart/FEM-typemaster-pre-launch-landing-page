@@ -5,6 +5,7 @@ import { SubHeading } from "./styledElements/Headings";
 import { Paragraph } from "./styledElements/Paragraphs";
 import { sectionSpacingSm, maxWidthLg } from "../abstracts/Mixins";
 import bgPattern from "../images/shared/pattern-square.svg";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   ${sectionSpacingSm}
@@ -13,6 +14,12 @@ const Container = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   gap: 5rem;
   position: relative;
+
+  ${Responsive.md`
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 2rem;
+  `}
 
   .hero-bg-pattern {
     position: absolute;
@@ -25,6 +32,10 @@ const Container = styled.div`
     height: 60rem;
     width: 100%;
     border-radius: var(--mainRadius);
+
+    ${Responsive.sm`
+      height: 30rem;
+    `}
   }
 
   .product-img--one {
@@ -41,6 +52,12 @@ const Container = styled.div`
 
   .product-info {
     padding: 5rem 0;
+
+    ${Responsive.md`
+      padding: 2rem 0;
+      grid-column: span 2;
+      grid-row: span 2;
+    `}
   }
 `;
 

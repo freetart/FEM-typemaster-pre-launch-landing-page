@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FeatureHeading } from "./styledElements/Headings";
 import { Paragraph } from "./styledElements/Paragraphs";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   .feature-icon-container {
@@ -8,6 +9,10 @@ const Container = styled.div`
     width: fit-content;
     padding: 2rem;
     border-radius: var(--mainRadius);
+
+    ${Responsive.sm`
+      margin: auto;
+    `}
   }
 
   .feature-icon:nth-child(even) {
