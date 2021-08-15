@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 const flexCenter = css`
   display: flex;
@@ -45,6 +45,11 @@ const maxWidthLg = css`
   margin: 0 auto;
 `;
 
+const maxWidthXl = css`
+  max-width: 1600px;
+  margin: 0 auto;
+`;
+
 export {
   flexCenter,
   headingStyles,
@@ -55,4 +60,5 @@ export {
   maxWidthSm,
   maxWidthMd,
   maxWidthLg,
+  maxWidthXl,
 };

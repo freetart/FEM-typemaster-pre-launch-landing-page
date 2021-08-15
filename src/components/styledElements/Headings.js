@@ -14,3 +14,11 @@ export const SubHeading = styled.h2`
   color: var(--secondary-300);
   text-transform: uppercase;
 `;
+
+export const FeatureHeading = styled.h2`
+  ${headingStyles}
+  font-size: 2.4rem;
+  color: var(--secondary-300);
+  text-transform: uppercase;
+  padding: 1rem 0;
+`;
