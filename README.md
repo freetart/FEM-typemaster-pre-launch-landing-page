@@ -12,5 +12,5 @@ site: https://fem-typemaster-pre-launch-landing-page-challenge.netlify.app/
 - react
 - styled components
 
-#### Dependencies
+#### Libraries
 - aos.js
